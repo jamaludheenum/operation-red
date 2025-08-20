@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+.header{
+    position: fixed;
+    border-bottom:2px solid grey;
+    width: 100vw;
+    
+    background-color: red;
+    display: flex;
+    position:fixed;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 100;
+   
+
+}
+.n-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 4.3rem;
+    height: 3.5rem;
+    background-color: red;
+    color: white;
+    font-size: 19px;
+}
+
+
+
+.nav{
+    text-decoration: none;
+}
+.n-box:hover{
+    background-color: white;
+    color: black;
+}
+input,#menu{
+    display: none;
+}
+
+
+
+
+
+
+.menu-links{
+    display: flex;
+    /* z-index: 1000; */
+}
+
+.stp-body{
+    background-color: red;
+    width: 100vw;
+    height:70vh ;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-top: 3.5rem;
+   gap: 1.5rem;
+   
+}
+.c{
+    color:white;
+    
+}
+.c1{
+   font-size: 4.9rem; 
+}
+.c2{
+   font-size: 1.4rem; 
+}
+button{
+    padding: .6rem ;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+}
+button:hover{
+    color: black;
+    background-color:rgb(209, 190, 190);
+    border: none;
+}
+.b1{
+width: 75rem;
+background-color: white;
+height: fit-content;
+display: flex;
+text-align: justify;
+
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.anchor{
+    font-size: 9rem;
+}
+
+.d2
+{
+    padding-top: 3.5rem;
+    padding-left: .5rem;
+}
+.dd{
+    padding-top: 6.5rem;
+    padding-right:.5rem ;
+}
+.body4{
+    background-color: grey;
+    height: 7rem;
+}
+.live{
+    color: white;
+    font-size: 1.5rem;
+}
+.social{
+    padding-top: 2rem;
+}
+.social a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.social a:hover{
+    color: grey;
+}
+
+
+#menu {
+    transition: transform 0.5s; 
+}
+
+
+#check:checked + label #menu {
+    transform: rotate(90deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width:759px)
+{
+.header{
+
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.menu-links{
+display: none;
+position:absolute;
+top: 3.5rem;
+left: 0;
+width: 100%;
+background: red;
+flex-direction: column;
+text-align: center;
+z-index: 10;
+}
+
+.n-box{
+    width: 100%;
+    padding-left: 10px;
+    justify-content: start;
+}
+
+#menu{
+    height: 3rem;
+    font-size: 2rem;
+    padding-top: 8px;
+    color: white;
+    
+}
+
+
+#check{
+    display:none;
+}
+input,#menu{
+    display: block;
+    cursor: pointer;
+}
+.header{
+    justify-content: space-between;
+}
+#check:checked~.menu-links,#menu{
+    display: flex;
+    background: red;
+    color: black;
+}
+
+
+}
