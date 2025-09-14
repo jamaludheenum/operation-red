@@ -216,7 +216,7 @@ input,#menu{
 
 
 }
-@media (max-width:350px)
+@media (max-width:600px)
 {
 .z1{
     flex-direction: column;
