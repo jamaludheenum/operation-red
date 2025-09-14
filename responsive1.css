@@ -215,9 +215,6 @@ input,#menu{
 }
 
 
-}
-@media (max-width:600px)
-{
 .z1{
     flex-direction: column;
 }
@@ -227,3 +224,8 @@ input,#menu{
 }
 
 }
+/* @media (max-width:600px)
+{
+
+
+} */
