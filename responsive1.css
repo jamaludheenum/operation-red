@@ -216,3 +216,14 @@ input,#menu{
 
 
 }
+@media (max-width:350px)
+{
+.z1{
+    flex-direction: column;
+}
+.z2{
+    flex-direction: column;
+    
+}
+
+}
